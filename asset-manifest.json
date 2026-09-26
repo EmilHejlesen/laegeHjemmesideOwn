@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/laegeHjemmesideOwn/static/css/main.b7382771.css",
+    "main.js": "/laegeHjemmesideOwn/static/js/main.75d125cc.js",
+    "static/js/453.63033106.chunk.js": "/laegeHjemmesideOwn/static/js/453.63033106.chunk.js",
+    "index.html": "/laegeHjemmesideOwn/index.html",
+    "main.b7382771.css.map": "/laegeHjemmesideOwn/static/css/main.b7382771.css.map",
+    "main.75d125cc.js.map": "/laegeHjemmesideOwn/static/js/main.75d125cc.js.map",
+    "453.63033106.chunk.js.map": "/laegeHjemmesideOwn/static/js/453.63033106.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7382771.css",
+    "static/js/main.75d125cc.js"
+  ]
+}
