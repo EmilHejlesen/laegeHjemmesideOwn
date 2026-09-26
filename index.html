@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="Sidehus bygger hjemmesider til små virksomheder: 5.000 kr. for siden og 500 kr. om måneden for hosting og rettelser.">
-<title>Sidehus</title>
+<meta name="description" content="Sidehuset bygger hjemmesider til små virksomheder: 5.000 kr. for siden og 500 kr. om måneden for hosting og rettelser.">
+<title>Sidehuset</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
@@ -105,15 +105,6 @@ section{padding-block:88px;border-top:1px solid var(--line)}
 .ticks svg{margin-top:4px}
 @media (max-width:760px){.pricing{grid-template-columns:1fr}.plan + .plan{border-left:0;border-top:1px solid var(--line)}.plan{padding:28px 22px}}
 
-/* calculator */
-.calc{margin-top:28px;display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:center;padding:28px 32px;border-radius:18px;background:var(--accent-soft)}
-.calc label{display:grid;gap:12px;font-weight:500}
-.calc input[type=range]{width:100%;accent-color:var(--accent)}
-.calc-out{display:grid;gap:6px;font-variant-numeric:tabular-nums}
-.calc-out .total{font-family:var(--display);font-size:2rem;font-weight:700;letter-spacing:-.02em}
-.calc-out small{color:var(--muted);font-family:var(--mono);font-size:.8rem}
-@media (max-width:760px){.calc{grid-template-columns:1fr;padding:24px 20px}}
-
 /* steps */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;list-style:none;margin:0;padding:0;counter-reset:s}
 .steps li{display:grid;gap:10px;align-content:start;padding-top:18px;border-top:2px solid var(--ink);counter-increment:s}
@@ -166,9 +157,9 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 <body>
 <header class="nav">
   <div class="wrap">
-    <a class="logo" href="#top" aria-label="Sidehus, til toppen">
+    <a class="logo" href="#top" aria-label="Sidehuset, til toppen">
       <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><path d="M3 12 13 3l10 9v11H3z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><rect x="8" y="13" width="10" height="2.2" rx="1.1" fill="var(--accent)"/><rect x="8" y="17.5" width="6" height="2.2" rx="1.1" fill="currentColor"/></svg>
-      Sidehus
+      Sidehuset
     </a>
     <ul>
       <li><a href="#pris">Pris</a></li>
@@ -243,17 +234,6 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
       </div>
     </div>
 
-    <div class="calc">
-      <label for="months">
-        <span>Hvad koster det over tid? <span id="months-label" style="color:var(--muted)">12 måneder</span></span>
-        <input id="months" type="range" min="1" max="36" value="12">
-      </label>
-      <div class="calc-out" aria-live="polite">
-        <span class="label">I alt</span>
-        <span class="total" id="total">11.000 kr.</span>
-        <small id="breakdown">5.000 kr. + 12 × 500 kr.</small>
-      </div>
-    </div>
   </section>
 
   <section id="forloeb" aria-labelledby="forloeb-h">
@@ -289,7 +269,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
         <span class="label">Kontakt</span>
         <h2 id="kontakt-h">Fortæl os om jeres virksomhed</h2>
         <p class="lead">Udfyld formularen, så vender vi tilbage med et forslag til, hvordan jeres side kunne se ud.</p>
-        <div class="contact-card"><span class="label">E-mail</span><span class="v" id="mail-addr">hej@sidehus.dk</span></div>
+        <div class="contact-card"><span class="label">E-mail</span><span class="v" id="mail-addr">hej@sidehuset.dk</span></div>
         <div class="contact-card"><span class="label">Telefon</span><span class="v">+45 12 34 56 78</span></div>
       </div>
 
@@ -318,7 +298,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 
         <div class="done" id="done" hidden>
           <h3>Næsten færdig</h3>
-          <p>Send beskeden herunder til <b>hej@sidehus.dk</b>, så vender vi tilbage inden for et par hverdage. Knappen åbner jeres mailprogram, hvis det er muligt. Ellers kan I kopiere teksten.</p>
+          <p>Send beskeden herunder til <b>hej@sidehuset.dk</b>, så vender vi tilbage inden for et par hverdage. Knappen åbner jeres mailprogram, hvis det er muligt. Ellers kan I kopiere teksten.</p>
           <pre id="summary"></pre>
           <div class="acts">
             <a class="btn btn-primary btn-sm" id="mailto" href="#">Åbn i mail</a>
@@ -333,7 +313,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Sidehus · Hjemmesider til små virksomheder</span>
+    <span>© 2026 Sidehuset · Hjemmesider til små virksomheder</span>
     <span>Alle priser i danske kroner</span>
   </div>
 </footer>
@@ -352,7 +332,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 
   const form = document.getElementById('form'), done = document.getElementById('done'),
         err = document.getElementById('err'), sum = document.getElementById('summary');
-  const TO = 'hej@sidehus.dk';
+  const TO = 'hej@sidehuset.dk';
   form.addEventListener('submit', e => {
     e.preventDefault();
     const d = Object.fromEntries(new FormData(form));
